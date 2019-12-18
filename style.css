@@ -1,0 +1,82 @@
+body{
+  display: flex;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /*font-size: 16;*/
+  background-color: rgba(120,133,139,.7);
+  overflow:  hidden;
+  margin: 0;
+  /*height: 100%;*/
+  height: 100vh;
+}
+#app {
+  display: flex;
+  color: white;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1rem;
+    /*font-size: 16px;*/
+  /*height: 100%;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+}
+
+.row {
+  display: flex; 
+  flex-direction: row;
+}
+
+.column {
+  display: flex; 
+  flex-direction: column;
+}
+
+img {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#date{ 
+ font-size: 1rem;
+ }
+
+.valute{
+  font-size: 1.6rem;
+  margin-top: 5px;
+  margin-top: 1rem;
+  /*margin-right: 1rem;*/
+}
+
+#arrow {
+  /*width: 20px;*/
+  background: transparent;
+  position: relative;
+  color: #fff;
+}
+#arrow::after {
+  content: ''; 
+  position: absolute; /* Абсолютное позиционирование */
+  bottom: 10px; /* Положение треугольника */
+  border: 10px solid transparent; /* Прозрачные границы */
+  border-bottom: 10px solid red; /* Добавляем треугольник */
+}
+#arrow::before {
+  content: ''; 
+  position: absolute; /* Абсолютное позиционирование */
+  bottom: 0px; /* Положение треугольника */
+  border: 10px solid transparent; /* Прозрачные границы */
+  border-top: 10px solid green; /* Добавляем треугольник */
+}
+
+#priceValute{
+  flex-grow: 1;
+}
+
+.nameValute, .priceValute{
+  margin-right: 10px;
+  
+}
