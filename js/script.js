@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function updateParams(data) {
-	console.log(data);
+	// console.log(data);
 	if (fontColor !== data.fontColor) { 	
 		fontColor = data.fontColor;
 		console.log(fontColor);
